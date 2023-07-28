@@ -5,7 +5,7 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./banner.css"
+import "./banner.css";
 
 const Banner = () => {
   const sliderRef = useRef();
@@ -45,7 +45,6 @@ const Banner = () => {
   return (
     <div className="w-full text-white">
       <Swiper
-      
         autoplay={{
           delay: 5500,
           disableOnInteraction: false,
@@ -58,7 +57,7 @@ const Banner = () => {
         modules={[Pagination, Autoplay]}
         loop={true}
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
         {bannerInfos.map((infos) => (
@@ -70,9 +69,7 @@ const Banner = () => {
                 alt=""
               />
               <div className=" flex flex-col space-y-4 absolute w-full top-[60%] items-center justify-center">
-                <h2 className=" text-[24px] font-normal">
-                  The Best Look
-                </h2>
+                <h2 className=" text-[24px] font-normal">The Best Look</h2>
                 <p className="  w-full text-gray-200 font-semibold text-5xl text-center">
                   Anytime Anywhere
                 </p>
