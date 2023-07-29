@@ -18,19 +18,27 @@ const App = () => {
         <BestDeals />
       </div>
       <div className="mt-20">
-        <Programs/>
+        <Programs />
       </div>
       <div className="mt-20">
-        <NewRelease/>
+        <NewRelease />
       </div>
       <div className="mt-20">
-        <NewFlavours/>
+        <NewFlavours />
       </div>
       <div className="mt-20">
-        <Rows/>
+        <div className=" mb-5">
+          <Rows />
+        </div>
+        <div className=" mb-5">
+          <Rows />
+        </div>
+        <div className=" mb-5">
+          <Rows />
+        </div>
       </div>
       <div className="my-20 ">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

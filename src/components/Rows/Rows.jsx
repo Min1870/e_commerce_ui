@@ -14,7 +14,6 @@ import "./row.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { BsStarFill } from "react-icons/bs";
 
 const Rows = () => {
   const sliderRef = useRef();
@@ -90,7 +89,7 @@ const Rows = () => {
       >
         <FaArrowRightLong size={20} />
       </div>
-      <div className="w-full select-none flex flex-col md:flex-row items-center overflow-hidden gap-5 md:justify-between col-span-12 md:col-span-6 lg:col-span-3 h-[400px] bg-black/90 rounded-xl bg-gradient-to-l from-gray-800 via-gray-700 to-gray-600  ">
+      <div className="w-full select-none flex flex-col md:flex-row items-center overflow-hidden gap-5 md:justify-between col-span-12 md:col-span-6 lg:col-span-3 h-[400px] bg-black/90 rounded-xl bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700  ">
         <div className=" flex items-center ml-10 z-10">
           <img src={pod} className="h-40" alt="" />
           <div className="flex flex-col items-start">
@@ -107,7 +106,7 @@ const Rows = () => {
               delay: 2000,
               disableOnInteraction: false,
             }}
-            loop={true}
+            // loop={true}
             onSwiper={(it) => (sliderRef.current = it)}
             slidesPerView={slidesPerView}
             cssMode={true}

@@ -63,7 +63,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(!menuOpen)}
               className=" cursor-pointer text-sm font-[500] hover:text-gray-400"
             >
-              Projects
+              Products
             </a>
           </li>
         </ul>

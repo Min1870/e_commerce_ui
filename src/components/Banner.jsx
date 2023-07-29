@@ -6,7 +6,7 @@ import banner4 from "../assets/banner/banner4.jpg";
 import banner5 from "../assets/banner/banner5.jpg";
 import banner6 from "../assets/banner/banner6.jpg";
 import banner7 from "../assets/banner/banner7.jpg";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, EffectFade  } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import "swiper/css";
@@ -62,7 +62,7 @@ const Banner = () => {
           "--swiper-pagination-color": "#000",
         }}
         onSwiper={(it) => (sliderRef.current = it)}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, EffectFade ]}
         loop={true}
         pagination={{ clickable: true }}
         // onSlideChange={() => console.log("slide change")}
