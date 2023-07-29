@@ -82,7 +82,7 @@ const Rows = () => {
     },
   ];
   return (
-    <div className=" relative max-w-[1215px] mx-auto">
+    <div className=" relative max-w-[1215px] mx-auto px-5 lg:px-0">
       <div
         onClick={() => sliderRef.current?.slideNext()}
         className="absolute top-[30%] right-3 z-10 cursor-pointer backdrop-blur-[2px] bg-black/70 text-white w-12 h-40 rounded-lg flex items-center justify-center"

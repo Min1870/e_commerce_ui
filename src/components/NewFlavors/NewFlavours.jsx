@@ -32,7 +32,7 @@ const NewFlavours = () => {
         slidesPerView={"auto"}
         spaceBetween={30}
         modules={[Navigation]}
-        className="mySwiper"
+        className="mySwiper px-5 lg:px-0"
       >
         <SwiperSlide>
           <div className="w-full bg-gradient-to-l from-gray-200 ">

@@ -6,8 +6,8 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
 const Programs = () => {
   return (
-    <div className=" max-w-[1215px] mx-auto">
-      <div className=" px-5 lg:px-0 grid grid-cols-12 grid-rows-4 sm:grid-rows-2 gap-2">
+    <div className="px-5 lg:px-0 max-w-[1215px] mx-auto">
+      <div className=" grid grid-cols-12 grid-rows-4 sm:grid-rows-2 gap-2">
         <div className="bg-black h-full md:row-span-2 md:col-span-8 row-span-1 col-span-12 rounded-xl overflow-hidden md:bg-program bg-no-repeat md:bg-right   ">
           <div className=" p-10">
             <div className="flex items-center gap-5 mb-10">

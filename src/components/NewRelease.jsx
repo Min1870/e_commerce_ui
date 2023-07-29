@@ -14,7 +14,7 @@ const NewRelease = () => {
           Try Our Latest Flavors Here
         </p>
       </div>
-      <div className="px-5 grid grid-cols-12 gap-3 grid-rows-1">
+      <div className="px-5 md:px-0 grid grid-cols-12 gap-3 grid-rows-1">
         <div className="relative col-span-12 md:col-span-6 lg:col-span-3 h-[200px] bg-black rounded-xl bg-newRelease3 bg-no-repeat bg-bottom md:bg-cover">
           <h4 className=" text-[14px] md:text-[16px] text-white md:max-w-[40%] left-5 bottom-3 absolute">
             Citrus Mon 20,0000 Pul Disposable 3 Percent 30,000MMK
