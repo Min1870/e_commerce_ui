@@ -40,7 +40,7 @@ const Footer = () => {
               <label htmlFor="Zawgyi">Myanmar(Zawgyi)</label>
             </div>
             <div className="flex ml-2 items-center gap-3">
-              <input type="radio" name="lang" id="english" />
+              <input type="radio" name="lang" id="english" checked="checked" />
               <label htmlFor="english">English</label>
             </div>
           </div>
