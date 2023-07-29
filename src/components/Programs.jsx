@@ -1,7 +1,7 @@
 import diamond from "../assets/diamond.svg";
 import gold from "../assets/gold.svg";
 import coin from "../assets/coin.svg";
-import device from "../../public/device.png";
+import device from "../assets/device.png";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
 const Programs = () => {

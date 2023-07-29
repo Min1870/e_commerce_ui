@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import pod from "../../../public/pods.png";
+import pod from "../../assets/pods.png";
 import aspireCyber from "../../assets/vape/aspire-cyber-s-kit-green-pod-vape-kit_1.jpg";
 import geekVape from "../../assets/vape/geekvape-sonder-q-red-blue-pod-kit_1.jpg";
 import innokinBlue from "../../assets/vape/innokin_endura_apex_blue_vape_kit_1.jpg";
@@ -31,13 +31,16 @@ const Rows = () => {
       setSlidesPerView(5);
     }
   };
+  const handleResize = () => {
+    requestAnimationFrame(updateSlidesPerView);
+  };
 
   useEffect(() => {
     updateSlidesPerView(); // Initial setting based on window width
-    window.addEventListener("resize", updateSlidesPerView);
+    window.addEventListener("resize", handleResize);
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", updateSlidesPerView);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -87,7 +90,7 @@ const Rows = () => {
       >
         <FaArrowRightLong size={20} />
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center overflow-hidden gap-5 md:justify-between col-span-12 md:col-span-6 lg:col-span-3 h-[400px] bg-black/90 rounded-xl bg-gradient-to-l from-gray-800 via-gray-700 to-gray-600  ">
+      <div className="w-full select-none flex flex-col md:flex-row items-center overflow-hidden gap-5 md:justify-between col-span-12 md:col-span-6 lg:col-span-3 h-[400px] bg-black/90 rounded-xl bg-gradient-to-l from-gray-800 via-gray-700 to-gray-600  ">
         <div className=" flex items-center ml-10 z-10">
           <img src={pod} className="h-40" alt="" />
           <div className="flex flex-col items-start">
@@ -101,7 +104,7 @@ const Rows = () => {
         <div className="w-full flex justify-center ml-28 gap-3">
           <Swiper
             autoplay={{
-              delay: 3000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             loop={true}

@@ -1,7 +1,7 @@
 import React from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import newRelease3 from "../../public/newRelease3.jpg";
-import newRelease4 from "../../public/newRelease4.jpg";
+import newRelease3 from "../assets/newRelease3.jpg";
+import newRelease4 from "../assets/newRelease4.jpg";
 
 const NewRelease = () => {
   return (

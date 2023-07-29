@@ -1,4 +1,11 @@
 import { useRef } from "react";
+import banner1 from "../assets/banner/banner1.jpg";
+import banner2 from "../assets/banner/banner2.jpg";
+import banner3 from "../assets/banner/banner3.jpg";
+import banner4 from "../assets/banner/banner4.jpg";
+import banner5 from "../assets/banner/banner5.jpg";
+import banner6 from "../assets/banner/banner6.jpg";
+import banner7 from "../assets/banner/banner7.jpg";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
@@ -8,37 +15,38 @@ import "swiper/css/pagination";
 import "./banner.css";
 
 const Banner = () => {
+  
   const sliderRef = useRef();
 
   const bannerInfos = [
     {
       id: 1,
-      img: "https://images.unsplash.com/photo-1524653736724-8490ee06859d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmFwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      img: banner1,
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1616065787198-a41b9ab94ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dmFwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      img: banner2
     },
     {
       id: 3,
-      img: "https://media.istockphoto.com/id/1074669778/photo/woman-vaping-an-electronic-cigarette.webp?b=1&s=170667a&w=0&k=20&c=ovD8YXFUjFsgFyhxqoXjv4lt8eRQq5T7-RRYkiHi0I0=",
+      img: banner3
     },
     {
       id: 4,
-      img: "https://images.unsplash.com/photo-1530031904810-67295401958c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFwaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      img: banner4
     },
 
     {
       id: 5,
-      img: "https://images.unsplash.com/photo-1553273058-03f8445d9f2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dmFwaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      img: banner5
     },
     {
       id: 6,
-      img: "https://images.unsplash.com/photo-1566645561206-a5586419fb5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZhcGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      img: banner6
     },
     {
       id: 7,
-      img: "https://images.unsplash.com/photo-1513656967094-e96936e02fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YSUyMGdpcmwlMjB2YXBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      img: banner7
     },
   ];
 
@@ -61,10 +69,10 @@ const Banner = () => {
         // onSwiper={(swiper) => console.log(swiper)}
       >
         {bannerInfos.map((infos) => (
-          <SwiperSlide>
-            <div key={infos.id} className="w-full h-full">
+          <SwiperSlide key={infos.id}>
+            <div className="w-full h-[700px]">
               <img
-                className="w-full h-[690px] object-cover"
+                className="w-full h-full object-cover"
                 src={infos.img}
                 alt=""
               />
@@ -86,13 +94,13 @@ const Banner = () => {
 
       <div
         onClick={() => sliderRef.current?.slidePrev()}
-        className=" absolute top-[40%] left-4 z-10 cursor-pointer backdrop-blur-[2px] bg-white/30 text-white w-12 h-40 rounded-lg flex items-center justify-center"
+        className=" absolute top-[40%] left-4 z-10 cursor-pointer backdrop-blur-[2px] bg-black/60 text-white w-8 h-20 md:w-12 md:h-40 rounded-lg flex items-center justify-center"
       >
         <MdArrowBackIosNew />
       </div>
       <div
         onClick={() => sliderRef.current?.slideNext()}
-        className="absolute top-[40%] right-4 z-10 cursor-pointer backdrop-blur-[2px] bg-white/30 text-white w-12 h-40 rounded-lg flex items-center justify-center"
+        className="absolute top-[40%] right-4 z-10 cursor-pointer backdrop-blur-[2px] bg-black/60 text-white w-8 h-20 md:w-12 md:h-40 rounded-lg flex items-center justify-center"
       >
         <MdArrowForwardIos />
       </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { BiPhone } from "react-icons/bi";
-import wave from "../../public/wave.png";
-import kpay from "../../public/kpay.png";
+import wave from "../assets/wave.png";
+import kpay from "../assets/kpay.png";
 import facebook from "../assets/socialmedia/facebook.svg";
 import instagram from "../assets/socialmedia/instagram.svg";
 import telegram from "../assets/socialmedia/telegram.svg";
